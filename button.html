@@ -1,0 +1,61 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<body>
+    <style>
+   
+    *{
+        padding:0 ;
+        margin: 0;
+        box-sizing:border-box;
+
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh ;
+        background: rgb(6, 6, 6);
+        font-family: sans-serif;
+    }
+    a{
+        text-decoration: none;
+        color: #c8d3d6;
+        border: 2px solid white;
+        padding: 2rem 5rem;
+        position: relative;
+        overflow: hidden;
+        transition: all 1s;
+        
+    }
+    a:before{
+        content: "Hello";
+        font-weight: bold;
+        color:rgb(0, 0, 0);
+        position:absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        background: rgb(253, 108, 255);
+        transform: translateY(-100%);
+        transition: all 1s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    a:hover:before{
+        transform: translateY(0);
+    }
+
+    </style>
+    <section class="container">
+        <a href="">click me</a>
+    </section>
+</body>
+</html></html>
