@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+     font-family:"Emilys Candy"
+}
+body{
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+display:flex;
+cursor: url("cursor/image2.png") 0 0, auto;
+ 
+ 
+}
+.container{
+    text-align: center;
+    height: 300px;
+    width:400px;
+    padding: 1.2rem;
+    box-shadow:0px 4px 8px rgba(0,0,0,0.3) ;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.button-container{
+    gap:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#incre,#decre,#reset{
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight: 600;
+    border-color: rgb(167, 101, 101);
+border-radius: 5px;
+box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+
+
+}
+    
+#count{
+justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    color: #1a355b;
+    margin: 30px;
+       
+    }
+   
+#incre:hover,#decre:hover,#reset:hover{
+    background-color: rgb(199, 89, 89);
+    transition: transform 0.2s ,box-shadow 0.2s;
+    cursor: url("cursor/image.png") 0 0, auto;
+   
+}
